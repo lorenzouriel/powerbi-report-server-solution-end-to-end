@@ -2,23 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>ETL</Name>
-    <LastWriteTime>2023-08-23T20:36:23.6311153Z</LastWriteTime>
+    <LastWriteTime>2023-08-24T17:13:17.634814Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>load_staging.dtsx</Name>
-      <LastWriteTime>2023-08-23T20:55:02.4239444Z</LastWriteTime>
+      <Name>load_employee.dtsx</Name>
+      <LastWriteTime>2023-08-24T17:53:52.5084837Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>load_dimension.dtsx</Name>
-      <LastWriteTime>2023-08-23T20:25:52.780373Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>load_fact.dtsx</Name>
-      <LastWriteTime>2023-08-23T20:25:50.708Z</LastWriteTime>
+      <Name>load_role.dtsx</Name>
+      <LastWriteTime>2023-08-24T17:20:03.5621473Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
