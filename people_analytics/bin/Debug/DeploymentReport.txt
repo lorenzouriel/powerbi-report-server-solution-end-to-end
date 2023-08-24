@@ -1,0 +1,33 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dim] (Schema)
+       [fact] (Schema)
+       [staging] (Schema)
+       [dim].[contract] (Table)
+       [dim].[status] (Table)
+       [dim].[role] (Table)
+       [dim].[race] (Table)
+       [dim].[nationality] (Table)
+       [dim].[marital_status] (Table)
+       [dim].[education] (Table)
+       [fact].[employee] (Table)
+       [staging].[employee] (Table)
+       [fact].[fk_employee_contract] (Foreign Key)
+       [fact].[fk_employee_marital_status] (Foreign Key)
+       [fact].[fk_employee_education] (Foreign Key)
+       [fact].[fk_employee_nationality] (Foreign Key)
+       [fact].[fk_employee_race] (Foreign Key)
+       [fact].[fk_employee_status] (Foreign Key)
+       [fact].[fk_employee_role] (Foreign Key)
+
+** Supporting actions
