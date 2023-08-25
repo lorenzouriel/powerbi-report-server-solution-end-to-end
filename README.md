@@ -65,13 +65,17 @@ Um dashboard é criado no Power BI, envolvendo as seguintes etapas:
 3. Utilização da tabela de calendário para informações temporais.
 4. Criação de medidas DAX para análises.
 
+![Architecture](Resources/Dashboard.png)
+
 ### Report
 
 Um relatório é criado no Power BI, com:
 
 1. Conexão com as fontes de dados.
 2. Uso de parâmetros para interatividade.
-3. Visualizações e gráficos relevantes.
+3. Visualizações e análises ad-hoc.
+
+![Architecture](Resources/Report.png)
 
 ### Deploy de Reports e Dashboards
 
@@ -161,13 +165,17 @@ A dashboard is created in Power BI, involving the following steps:
 3. Use of a calendar table for temporal information.
 4. Creation of DAX measures for analysis.
 
+![Architecture](Resources/Dashboard.png)
+
 ### Report
 
 A report is created in Power BI, with:
 
 1. Connection to data sources.
 2. Use of parameters for interactivity.
-3. Relevant visualizations and charts.
+3. Relevant visualizations and ad-hoc analysis.
+
+![Architecture](Resources/Report.png)
 
 ### Deploying Reports and Dashboards
 
