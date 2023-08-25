@@ -88,7 +88,7 @@ Os relatórios e dashboards podem ser incorporados em sites ou compartilhados po
 
 ### Exemplo Conceitual da Arquitetura
 
-![Arquitetura](link_para_imagem)
+![Architecture](Resources/architecture.png)
 
 Essa documentação apresentou de forma clara as etapas e componentes do projeto **"Sinergia de Dados: Excel para Power BI através do Ciclo ETL e SQL"**. Desde a integração inicial das planilhas Excel até a criação de dashboards e relatórios no Power BI, todas as etapas foram explicadas detalhadamente. Isso permite que tanto desenvolvedores quanto não técnicos entendam o funcionamento e a utilidade desse projeto de Business Intelligence.
 
@@ -184,7 +184,7 @@ The reports and dashboards can be embedded in websites or shared through URLs or
 
 ### Conceptual Architecture Example
 
-![Architecture](image_link)
+![Architecture](Resources/architecture.png)
 
 This documentation has provided a clear explanation of the steps and components of the project **"Data Synergy: Excel to Power BI through ETL Cycle and SQL"**. From the initial integration of Excel spreadsheets to the creation of dashboards and reports in Power BI, all the steps have been explained in detail. This allows both developers and non-technical individuals to understand the functioning
 
