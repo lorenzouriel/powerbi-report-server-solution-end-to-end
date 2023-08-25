@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="load_employee"
   DTS:PackageType="5"
-  DTS:VersionBuild="64"
-  DTS:VersionGUID="{3B89FEBA-9F67-42EB-82DE-B3E060F4C204}">
+  DTS:VersionBuild="72"
+  DTS:VersionGUID="{BF43271A-2AFB-4BB5-9A93-2B0126C2C672}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2020,7 +2020,7 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">3</property>
+                  typeConverter="AccessMode">0</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -3050,7 +3050,7 @@
     design-time-name="Package\DFT - Load Staging">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="173,42"
           Id="Package\DFT - Load Staging\XLSX - Load Sheet"
@@ -3081,6 +3081,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="2.1 XLSX - Load Sheet (Cria conexão com a planilha funcionários)&#xD;&#xA;2.2 OLEB - Destination Staging (Carrega os dados na Staging)"
+          ParentId="Package\DFT - Load Staging"
+          FontInfo="{assembly:Null}"
+          Size="372,60"
+          Id="18f5bf44-4128-491d-8442-e6b0c665530f"
+          TopLeft="316,45" />
+        <AnnotationLayout
+          Text="2.1 XLSX - Load Sheet (Creates a connection to the employees worksheet)&#xA;2.2 OLEB - Destination Staging (Loads data into Staging)"
+          ParentId="Package\DFT - Load Staging"
+          FontInfo="{assembly:Null}"
+          Size="418,56"
+          Id="6a29dc59-e864-4946-aa5c-88675f9632cb"
+          TopLeft="319,103" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -3114,18 +3128,18 @@
     design-time-name="Package\DFT - Load Employee">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="201,42"
           Id="Package\DFT - Load Employee\OLEDB - Source Staging"
-          TopLeft="217.5,5.5" />
+          TopLeft="102.5,11.5" />
         <NodeLayout
           Size="188,42"
           Id="Package\DFT - Load Employee\SCD - Load Employee"
-          TopLeft="224,86.5" />
+          TopLeft="109,92.5" />
         <EdgeLayout
           Id="Package\DFT - Load Employee.Paths[OLE DB Source Output]"
-          TopLeft="318,47.5">
+          TopLeft="203,53.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3148,10 +3162,10 @@
         <NodeLayout
           Size="107,42"
           Id="Package\DFT - Load Employee\Insert"
-          TopLeft="168.5,200.5" />
+          TopLeft="53.5000000000001,206.5" />
         <EdgeLayout
           Id="Package\DFT - Load Employee.Paths[New Output]"
-          TopLeft="288,128.5">
+          TopLeft="173,134.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3188,10 +3202,10 @@
         <NodeLayout
           Size="114,42"
           Id="Package\DFT - Load Employee\Update"
-          TopLeft="352.5,202.5" />
+          TopLeft="237.5,208.5" />
         <EdgeLayout
           Id="Package\DFT - Load Employee.Paths[Changing Attribute Updates Output]"
-          TopLeft="348,128.5">
+          TopLeft="233,134.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3225,6 +3239,20 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="3.1 OLEB -Source Staging (Cria conexão com a Staging)&#xD;&#xA;3.2 SCD - Load Employee (Adiciono um Slowly Changing Dimension para verificar se o registro&#xD;&#xA;precisa ser inserido ou atualizado)&#xD;&#xA;      3.2.1 Insert (Insere novos registros)&#xD;&#xA;      3.2.2 Update (Atualiza registros)"
+          ParentId="Package\DFT - Load Employee"
+          FontInfo="{assembly:Null}"
+          Size="528,104"
+          Id="c4cda5de-7a2c-4d66-b09c-e89870e2fc84"
+          TopLeft="375,12" />
+        <AnnotationLayout
+          Text="3.1 OLEB -Source Staging (Creates connection with Staging)&#xA;3.2 SCD - Load Employee (I add a Slowly Changing Dimension to verify that the record&#xD;&#xA;needs to be entered or updated)&#xA;      3.2.1 Insert &#xA;      3.2.2 Update "
+          ParentId="Package\DFT - Load Employee"
+          FontInfo="{assembly:Null}"
+          Size="485,104"
+          Id="078ac9ed-e9f0-4542-82ab-2215007a2bd2"
+          TopLeft="374.5,131.5" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>

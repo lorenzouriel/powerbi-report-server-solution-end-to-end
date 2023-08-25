@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="load_role"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{263E1AA4-0249-4314-A6F5-DE102E6627CE}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{F7C50E25-B069-4EF0-96BE-E17D38E868C5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -675,10 +675,10 @@
           Id="Package\DFT - Load Role"
           TopLeft="104,114" />
         <AnnotationLayout
-          Text="1 - DFT - Load Role (Inicia uma tarefa para carregamento da tabela cargo)&#xD;&#xA;"
+          Text="1 - DFT - Load Role (Inicia uma tarefa para carregamento da tabela cargo)&#xA;"
           ParentId="Package"
           FontInfo="{assembly:Null}"
-          Size="419,60"
+          Size="419,56"
           Id="a807323b-5734-4579-8bf5-97f4803295ba"
           TopLeft="280,69" />
         <AnnotationLayout
@@ -697,17 +697,61 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="173,42"
-          Id="Package\DFT - Load Role\XLSX - Load Sheet"
-          TopLeft="231.5,5.5" />
-        <NodeLayout
           Size="162,42"
           Id="Package\DFT - Load Role\SCD - Load Role"
           TopLeft="236,148.5" />
         <NodeLayout
+          Size="107,42"
+          Id="Package\DFT - Load Role\Insert"
+          TopLeft="145.5,233.5" />
+        <NodeLayout
+          Size="114,42"
+          Id="Package\DFT - Load Role\Update"
+          TopLeft="337.5,232.5" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\DFT - Load Role\XLSX - Load Sheet"
+          TopLeft="231.5,5.5" />
+        <NodeLayout
           Size="161,42"
           Id="Package\DFT - Load Role\Data Conversion"
           TopLeft="235.5,76.5" />
+        <EdgeLayout
+          Id="Package\DFT - Load Role.Paths[New Output]"
+          TopLeft="291.333333333333,190.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-92.3333333333333,43"
+              Start="0,0"
+              End="-92.3333333333333,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.4523227383863" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.4523227383863"
+                    Point2="0,17.4523227383863"
+                    Point3="-4,17.4523227383863" />
+                  <mssgle:LineSegment
+                    End="-88.3333333333333,17.4523227383863" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-88.3333333333333,17.4523227383863"
+                    Point2="-92.3333333333333,17.4523227383863"
+                    Point3="-92.3333333333333,21.4523227383863" />
+                  <mssgle:LineSegment
+                    End="-92.3333333333333,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-73.2580533854167,22.4523227383863,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load Role.Paths[Excel Source Output]"
           TopLeft="317,47.5">
@@ -752,50 +796,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
-          Id="Package\DFT - Load Role\Insert"
-          TopLeft="145.5,233.5" />
-        <EdgeLayout
-          Id="Package\DFT - Load Role.Paths[New Output]"
-          TopLeft="291.333333333333,190.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-92.3333333333333,43"
-              Start="0,0"
-              End="-92.3333333333333,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13.4523227383863" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.4523227383863"
-                    Point2="0,17.4523227383863"
-                    Point3="-4,17.4523227383863" />
-                  <mssgle:LineSegment
-                    End="-88.3333333333333,17.4523227383863" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-88.3333333333333,17.4523227383863"
-                    Point2="-92.3333333333333,17.4523227383863"
-                    Point3="-92.3333333333333,21.4523227383863" />
-                  <mssgle:LineSegment
-                    End="-92.3333333333333,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-73.2580533854167,22.4523227383863,54.1827734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="114,42"
-          Id="Package\DFT - Load Role\Update"
-          TopLeft="337.5,232.5" />
         <EdgeLayout
           Id="Package\DFT - Load Role.Paths[Changing Attribute Updates Output]"
           TopLeft="342.666666666667,190.5">
@@ -833,35 +833,22 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <AnnotationLayout
-          Text="1.1 - XLSX - Load Sheet (Cria a conexão com a planilha de cargos)&#xD;&#xA;&#xD;&#xA;1.2 - Data Conversion (Faz a conversão do campo id)&#xD;&#xA;&#xD;&#xA;1.3 - SCD - Load Role (Adiciono um Slowly Changing Dimension para verificar se o campo &#xD;&#xA;precisa ser inserido ou atualizado)&#xD;&#xA;    1.3.1 - Insert (Insere Novo Campos)&#xD;&#xA;    1.3.2 - Update (Atualiza Campos)"
+          Text="1.1 - XLSX - Load Sheet (Cria a conexão com a planilha de cargos)&#xA;1.2 - Data Conversion (Faz a conversão do campo id)&#xA;1.3 - SCD - Load Role (Adiciono um Slowly Changing Dimension para verificar se o registro&#xA;precisa ser inserido ou atualizado)&#xA;    1.3.1 - Insert (Insere novos registros)&#xA;    1.3.2 - Update (Atualiza registros)"
           ParentId="Package\DFT - Load Role"
           FontInfo="{assembly:Null}"
-          Size="506,152"
+          Size="508,120"
           Id="23d4e0a9-f67c-4591-b8c7-582ad403f3af"
           TopLeft="454,12" />
         <AnnotationLayout
-          Text="1.1 - XLSX - Load Sheet (Creates the connection with the role sheet)&#xA;&#xA;1.2 - Data Conversion (Does the id field conversion)&#xA;&#xA;1.3 - SCD - Load Role (I add a Slowly Changing Dimension to check if the field&#xD;&#xA;needs to be entered or updated)&#xA;    1.3.1 - Insert &#xA;    1.3.2 - Update "
+          Text="1.1 - XLSX - Load Sheet (Creates the connection with the role sheet)&#xA;1.2 - Data Conversion (Does the id field conversion)&#xA;1.3 - SCD - Load Role (I add a Slowly Changing Dimension to verify that the record&#xD;&#xA;needs to be entered or updated)&#xA;    1.3.1 - Insert &#xA;    1.3.2 - Update "
           ParentId="Package\DFT - Load Role"
           FontInfo="{assembly:Null}"
-          Size="440,152"
+          Size="464,120"
           Id="5e5c4ae6-2e3b-4ca7-9786-4ed20b25260e"
-          TopLeft="460.5,190.5" />
+          TopLeft="461.5,141.5" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Role\XLSX - Load Sheet">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\DFT - Load Role\SCD - Load Role">
     <Properties>
@@ -902,6 +889,19 @@
   &lt;DateVariable /&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load Role\XLSX - Load Sheet">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

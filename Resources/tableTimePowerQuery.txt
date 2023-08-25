@@ -1,0 +1,73 @@
+let
+
+// Change only the Table and Date column
+// You can set the initial date fixed by changing DataInicio to DataInicio = #date(2019, 01, 01) and only altering the desired year.
+// The maximum date can be set dynamically based on the current year, changing DataFim = Date.EndOfYear(MaiorData) to DataFim = Date.From(Date.EndOfYear(DateTime.LocalNow()))
+// If you use the options above, you can comment out the Datas, MenorData, and MaiorData parameters
+
+
+// Creating a list of unique Dates and buffering it.
+    Datas = List.Buffer(List.Distinct(fSales[Date])),
+
+// Do not change anything below this line
+
+    MenorData = List.Min(Datas),
+    MaiorData = List.Max(Datas),
+
+    // MenorData = #date(2019, 01, 01),
+    // MaiorData = Date.From(Date.EndOfYear(DateTime.LocalNow())),
+    DataInicio = Date.StartOfYear(MenorData),
+    DataFim = Date.EndOfYear(MaiorData),
+    Dias = Duration.Days(DataFim - DataInicio) + 1,
+    ListarDatas = List.Dates(DataInicio, Dias, #duration(1, 0, 0, 0)),
+    Tabela = #table(
+        type table[
+            Date = date,
+            Day = Int64.Type,
+            Year = Int64.Type,
+            MonthName = text,
+            ShortMonth = text,
+            MonthYear = text,
+            MonthNum = number,
+            YearMonthINT = number,
+            Quarter = Int64.Type,
+            AbbreviatedQuarter = text,
+            Bimester = text,
+            Semester = text,
+            Week = Int64.Type,
+            DayOfWeek = Int64.Type,
+            DayName = text,
+            IsCurrentDay = Logical.Type,
+            IsCurrentMonth = Logical.Type,
+            IsCurrentYear = Logical.Type,
+            CurrentMonth = text,
+            CurrentYear = text
+        ],
+        List.Transform(
+            ListarDatas,
+            each {
+                _,
+                Date.Day(_),
+                Date.Year(_),
+                Text.Proper(Date.MonthName(_)),
+                Text.Proper(Text.Start(Date.MonthName(_), 3)),
+                Text.Proper(Text.Start(Date.MonthName(_), 3)) & "-" & Text.End(Text.From(Date.Year(_)), 2),
+                Date.Month(_),
+                Date.Year(_) * 100 + Date.Month(_),
+                Date.QuarterOfYear(_),
+                Text.From(Date.QuarterOfYear(_)) & "th Qtr",
+                Text.From(Number.RoundUp(Date.Month(_) / 2, 0)) & "th Bim",
+                Text.From(Number.RoundUp(Date.Month(_) / 6, 0)) & "th Sem",
+                Date.WeekOfMonth(_),
+                Date.DayOfWeek(_),
+                Date.DayOfWeekName(_),
+                Date.IsInCurrentDay(_),
+                Date.IsInCurrentMonth(_),
+                Date.IsInCurrentYear(_),
+                if Date.IsInCurrentMonth(_) and Date.IsInCurrentYear(_) then "Current Month" else Text.Proper(Text.Start(Date.MonthName(_), 3)),
+                if Date.IsInCurrentYear(_) then "Current Year" else Text.From(Date.Year(_))
+            }
+        )
+    )
+in
+    Tabela

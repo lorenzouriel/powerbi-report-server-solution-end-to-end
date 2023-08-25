@@ -4,3 +4,12 @@ C:\0 - Personal\portfolio\projects\0\people_analytics\people_analytics\obj\Debug
 C:\0 - Personal\portfolio\projects\0\people_analytics\people_analytics\obj\Debug\people_analytics.pdb
 C:\0 - Personal\portfolio\projects\0\people_analytics\people_analytics\bin\Debug\people_analytics.dll
 C:\0 - Personal\portfolio\projects\0\people_analytics\people_analytics\bin\Debug\people_analytics.pdb
+C:\0 - Personal\portfolio\projects\0\people_analytics\bin\Debug\people_analytics.dacpac
+C:\0 - Personal\portfolio\projects\0\people_analytics\bin\Debug\people_analytics.dll
+C:\0 - Personal\portfolio\projects\0\people_analytics\bin\Debug\people_analytics.pdb
+C:\0 - Personal\portfolio\projects\0\people_analytics\obj\Debug\people_analytics.dll
+C:\0 - Personal\portfolio\projects\0\people_analytics\obj\Debug\people_analytics.pdb
+C:\0 - Personal\portfolio\projects\0\people_analytics\obj\Debug\Model.xml
+C:\0 - Personal\portfolio\projects\0\people_analytics\obj\Debug\refactor.xml
+C:\0 - Personal\portfolio\projects\0\people_analytics\obj\Debug\postdeploy.sql
+C:\0 - Personal\portfolio\projects\0\people_analytics\obj\Debug\predeploy.sql
