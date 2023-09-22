@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="load_employee"
   DTS:PackageType="5"
-  DTS:VersionBuild="72"
-  DTS:VersionGUID="{BF43271A-2AFB-4BB5-9A93-2B0126C2C672}">
+  DTS:VersionBuild="73"
+  DTS:VersionGUID="{439E70E4-D22D-4DBC-9B4B-D06C9CC1E661}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -34,6 +34,7 @@
     <DTS:Executable
       DTS:refId="Package\DFT - Load Employee"
       DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{b737cffb-8919-4fbc-907c-5e8dcfceb2f1}"
       DTS:ExecutableType="Microsoft.Pipeline"
@@ -1971,6 +1972,7 @@
     <DTS:Executable
       DTS:refId="Package\DFT - Load Staging"
       DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{230A6CE8-F15E-4352-A7BD-EBBE86C9176B}"
       DTS:ExecutableType="Microsoft.Pipeline"
@@ -2894,6 +2896,7 @@
     <DTS:Executable
       DTS:refId="Package\EST - Drop Staging"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DelayValidation="True"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{7ddecf86-9742-44ab-b296-df1db7422a2a}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
@@ -2948,6 +2951,10 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="186,42"
+          Id="Package\DFT - Load Employee"
+          TopLeft="136,192" />
+        <NodeLayout
           Size="175,42"
           Id="Package\DFT - Load Staging"
           TopLeft="142,117" />
@@ -2955,6 +2962,10 @@
           Size="183,42"
           Id="Package\EST - Create Staging"
           TopLeft="139,37" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\EST - Drop Staging"
+          TopLeft="138,268" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="230,79">
@@ -2977,14 +2988,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="174,42"
-          Id="Package\EST - Drop Staging"
-          TopLeft="138,268" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\DFT - Load Employee"
-          TopLeft="136,192" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="229.25,159">
@@ -3030,7 +3033,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <AnnotationLayout
-          Text="1. EST - Create Staging (Cria uma Staging da tabela funcionário)&#xD;&#xA;2. DFT - Load Staging (Carrega a tabela Staging com os dados da planilha funcionário)&#xD;&#xA;3. DFT - Load Employee (Carrega a tabela employee com os dados da Staging)&#xD;&#xA;4. EST - Drop Staging (Apaga a tabela Staging da base)"
+          Text="1. EST - Create Staging (Cria uma Staging da tabela funcionário)&#xA;2. DFT - Load Staging (Carrega a tabela Staging com os dados da planilha funcionário)&#xA;3. DFT - Load Employee (Carrega a tabela employee com os dados da Staging)&#xA;4. EST - Drop Staging (Apaga a tabela Staging da base)"
           ParentId="Package"
           FontInfo="{assembly:Null}"
           Size="484,88"
@@ -3047,96 +3050,26 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\DFT - Load Staging">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="173,42"
-          Id="Package\DFT - Load Staging\XLSX - Load Sheet"
-          TopLeft="105,46" />
-        <NodeLayout
-          Size="221,42"
-          Id="Package\DFT - Load Staging\OLEDB - Destination Staging"
-          TopLeft="83,127" />
-        <EdgeLayout
-          Id="Package\DFT - Load Staging.Paths[Excel Source Output]"
-          TopLeft="192.5,88">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39"
-              Start="0,0"
-              End="0,31.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <AnnotationLayout
-          Text="2.1 XLSX - Load Sheet (Cria conexão com a planilha funcionários)&#xD;&#xA;2.2 OLEB - Destination Staging (Carrega os dados na Staging)"
-          ParentId="Package\DFT - Load Staging"
-          FontInfo="{assembly:Null}"
-          Size="372,60"
-          Id="18f5bf44-4128-491d-8442-e6b0c665530f"
-          TopLeft="316,45" />
-        <AnnotationLayout
-          Text="2.1 XLSX - Load Sheet (Creates a connection to the employees worksheet)&#xA;2.2 OLEB - Destination Staging (Loads data into Staging)"
-          ParentId="Package\DFT - Load Staging"
-          FontInfo="{assembly:Null}"
-          Size="418,56"
-          Id="6a29dc59-e864-4946-aa5c-88675f9632cb"
-          TopLeft="319,103" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Staging\XLSX - Load Sheet">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Staging\OLEDB - Destination Staging">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
     design-time-name="Package\DFT - Load Employee">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="201,42"
-          Id="Package\DFT - Load Employee\OLEDB - Source Staging"
-          TopLeft="102.5,11.5" />
+          Size="114,42"
+          Id="Package\DFT - Load Employee\Update"
+          TopLeft="237.5,208.5" />
         <NodeLayout
           Size="188,42"
           Id="Package\DFT - Load Employee\SCD - Load Employee"
           TopLeft="109,92.5" />
+        <NodeLayout
+          Size="201,42"
+          Id="Package\DFT - Load Employee\OLEDB - Source Staging"
+          TopLeft="102.5,11.5" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\DFT - Load Employee\Insert"
+          TopLeft="53.5000000000001,206.5" />
         <EdgeLayout
           Id="Package\DFT - Load Employee.Paths[OLE DB Source Output]"
           TopLeft="203,53.5">
@@ -3156,13 +3089,11 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
-          Id="Package\DFT - Load Employee\Insert"
-          TopLeft="53.5000000000001,206.5" />
         <EdgeLayout
           Id="Package\DFT - Load Employee.Paths[New Output]"
           TopLeft="173,134.5">
@@ -3199,10 +3130,6 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="114,42"
-          Id="Package\DFT - Load Employee\Update"
-          TopLeft="237.5,208.5" />
         <EdgeLayout
           Id="Package\DFT - Load Employee.Paths[Changing Attribute Updates Output]"
           TopLeft="233,134.5">
@@ -3240,35 +3167,22 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <AnnotationLayout
-          Text="3.1 OLEB -Source Staging (Cria conexão com a Staging)&#xD;&#xA;3.2 SCD - Load Employee (Adiciono um Slowly Changing Dimension para verificar se o registro&#xD;&#xA;precisa ser inserido ou atualizado)&#xD;&#xA;      3.2.1 Insert (Insere novos registros)&#xD;&#xA;      3.2.2 Update (Atualiza registros)"
+          Text="3.1 OLEB -Source Staging (Cria conexão com a Staging)&#xA;3.2 SCD - Load Employee (Adiciono um Slowly Changing Dimension para verificar se o registro&#xA;precisa ser inserido ou atualizado)&#xA;      3.2.1 Insert (Insere novos registros)&#xA;      3.2.2 Update (Atualiza registros)"
           ParentId="Package\DFT - Load Employee"
           FontInfo="{assembly:Null}"
-          Size="528,104"
+          Size="528,NaN"
           Id="c4cda5de-7a2c-4d66-b09c-e89870e2fc84"
           TopLeft="375,12" />
         <AnnotationLayout
-          Text="3.1 OLEB -Source Staging (Creates connection with Staging)&#xA;3.2 SCD - Load Employee (I add a Slowly Changing Dimension to verify that the record&#xD;&#xA;needs to be entered or updated)&#xA;      3.2.1 Insert &#xA;      3.2.2 Update "
+          Text="3.1 OLEB -Source Staging (Creates connection with Staging)&#xA;3.2 SCD - Load Employee (I add a Slowly Changing Dimension to verify that the record&#xA;needs to be entered or updated)&#xA;      3.2.1 Insert &#xA;      3.2.2 Update "
           ParentId="Package\DFT - Load Employee"
           FontInfo="{assembly:Null}"
-          Size="485,104"
+          Size="485,NaN"
           Id="078ac9ed-e9f0-4542-82ab-2215007a2bd2"
           TopLeft="374.5,131.5" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT - Load Employee\OLEDB - Source Staging">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\DFT - Load Employee\SCD - Load Employee">
     <Properties>
@@ -3435,6 +3349,99 @@
   &lt;DateVariable /&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load Employee\OLEDB - Source Staging">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\DFT - Load Staging">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="173,42"
+          Id="Package\DFT - Load Staging\XLSX - Load Sheet"
+          TopLeft="105,46" />
+        <NodeLayout
+          Size="221,42"
+          Id="Package\DFT - Load Staging\OLEDB - Destination Staging"
+          TopLeft="83,127" />
+        <EdgeLayout
+          Id="Package\DFT - Load Staging.Paths[Excel Source Output]"
+          TopLeft="192.5,88">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39"
+              Start="0,0"
+              End="0,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="2.1 XLSX - Load Sheet (Cria conexão com a planilha funcionários)&#xA;2.2 OLEB - Destination Staging (Carrega os dados na Staging)"
+          ParentId="Package\DFT - Load Staging"
+          FontInfo="{assembly:Null}"
+          Size="372,NaN"
+          Id="18f5bf44-4128-491d-8442-e6b0c665530f"
+          TopLeft="316,45" />
+        <AnnotationLayout
+          Text="2.1 XLSX - Load Sheet (Creates a connection to the employees worksheet)&#xA;2.2 OLEB - Destination Staging (Loads data into Staging)"
+          ParentId="Package\DFT - Load Staging"
+          FontInfo="{assembly:Null}"
+          Size="418,NaN"
+          Id="6a29dc59-e864-4946-aa5c-88675f9632cb"
+          TopLeft="319,103" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load Staging\OLEDB - Destination Staging">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load Staging\XLSX - Load Sheet">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

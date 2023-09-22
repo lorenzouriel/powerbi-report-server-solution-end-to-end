@@ -65,7 +65,7 @@ Um dashboard é criado no Power BI, envolvendo as seguintes etapas:
 3. Utilização da tabela de calendário para informações temporais.
 4. Criação de medidas DAX para análises.
 
-![Architecture](Resources/Dashboard.png)
+![Architecture](Resources/Imgs/Dashboard.png)
 
 ### Report
 
@@ -75,7 +75,7 @@ Um relatório é criado no Power BI, com:
 2. Uso de parâmetros para interatividade.
 3. Visualizações e análises ad-hoc.
 
-![Architecture](Resources/Report.png)
+![Architecture](Resources/Imgs/Report.png)
 
 ### Deploy de Reports e Dashboards
 
@@ -92,7 +92,7 @@ Os relatórios e dashboards podem ser incorporados em sites ou compartilhados po
 
 ### Exemplo Conceitual da Arquitetura
 
-![Architecture](Resources/architecture.png)
+![Architecture](Resources/Imgs/architecture.png)
 
 Essa documentação apresentou de forma clara as etapas e componentes do projeto **"Sinergia de Dados: Excel para Power BI através do Ciclo ETL e SQL"**. Desde a integração inicial das planilhas Excel até a criação de dashboards e relatórios no Power BI, todas as etapas foram explicadas detalhadamente. Isso permite que tanto desenvolvedores quanto não técnicos entendam o funcionamento e a utilidade desse projeto de Business Intelligence.
 
@@ -165,7 +165,7 @@ A dashboard is created in Power BI, involving the following steps:
 3. Use of a calendar table for temporal information.
 4. Creation of DAX measures for analysis.
 
-![Architecture](Resources/Dashboard.png)
+![Architecture](Resources/Imgs/Dashboard.png)
 
 ### Report
 
@@ -175,7 +175,7 @@ A report is created in Power BI, with:
 2. Use of parameters for interactivity.
 3. Relevant visualizations and ad-hoc analysis.
 
-![Architecture](Resources/Report.png)
+![Architecture](Resources/Imgs/Report.png)
 
 ### Deploying Reports and Dashboards
 
@@ -192,7 +192,7 @@ The reports and dashboards can be embedded in websites or shared through URLs or
 
 ### Conceptual Architecture Example
 
-![Architecture](Resources/architecture.png)
+![Architecture](Resources/Imgs/architecture.png)
 
 This documentation has provided a clear explanation of the steps and components of the project **"Data Synergy: Excel to Power BI through ETL Cycle and SQL"**. From the initial integration of Excel spreadsheets to the creation of dashboards and reports in Power BI, all the steps have been explained in detail. This allows both developers and non-technical individuals to understand the functioning
 
