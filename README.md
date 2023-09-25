@@ -17,7 +17,7 @@ As ferramentas utilizadas no projeto são:
 - SQL Server
 - Power BI
 - Power BI Report Server
-- Excel
+- Figma
 
 ### Informações das Planilhas
 
@@ -45,7 +45,6 @@ A estrutura das tabelas é definida no projeto do banco de dados, refletindo as 
 As soluções são implantadas no SQL Server após a construção:
 
 1. O Database Project é publicado no SQL Server.
-2. Os projetos SSIS e SSRS são criados e publicados no servidor.
 
 ## ETL
 
@@ -117,7 +116,7 @@ The tools used in the project are:
 - SQL Server
 - Power BI
 - Power BI Report Server
-- Excel
+- Figma
 
 ### Spreadsheet Information
 
@@ -145,7 +144,6 @@ The table structure is defined in the database project, reflecting the informati
 The solutions are deployed to the SQL Server after construction:
 
 1. The Database Project is published to the SQL Server.
-2. The SSIS and SSRS projects are created and published on the server.
 
 ## ETL
 
