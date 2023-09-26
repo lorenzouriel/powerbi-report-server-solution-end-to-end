@@ -199,6 +199,8 @@ The reports and dashboards can be embedded in websites or shared through URLs or
 ![DashboardEmbed](Resources/Imgs/EmbedDashboard.png)
 
 
+
+
 ## Architecture
 
 ### Conceptual Architecture Example
