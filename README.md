@@ -87,6 +87,12 @@ Os relatórios e dashboards são implantados no Power BI Report Server:
 
 Os relatórios e dashboards podem ser incorporados em sites ou compartilhados por meio de URLs ou iFrames.
 
+**Exemplo do relatório páginado no Report Server:**
+![ReportEmbed](Resources/Imgs/EmbedReport.png)
+
+**Exemplo do Dashboard no Report Server:**
+![DashboardEmbed](Resources/Imgs/EmbedDashboard.png)
+
 ## Arquitetura
 
 ### Exemplo Conceitual da Arquitetura
@@ -186,6 +192,13 @@ The reports and dashboards are deployed to the Power BI Report Server:
 
 The reports and dashboards can be embedded in websites or shared through URLs or iFrames.
 
+**Paginated Report example on Report Server:**
+![ReportEmbed](Resources/Imgs/EmbedReport.png)
+
+**Dashboard example on Report Server:**
+![DashboardEmbed](Resources/Imgs/EmbedDashboard.png)
+
+
 ## Architecture
 
 ### Conceptual Architecture Example
@@ -193,4 +206,3 @@ The reports and dashboards can be embedded in websites or shared through URLs or
 ![Architecture](Resources/Imgs/architecture.png)
 
 This documentation has provided a clear explanation of the steps and components of the project **"Data Synergy: Excel to Power BI through ETL Cycle and SQL"**. From the initial integration of Excel spreadsheets to the creation of dashboards and reports in Power BI, all the steps have been explained in detail. This allows both developers and non-technical individuals to understand the functioning
-
