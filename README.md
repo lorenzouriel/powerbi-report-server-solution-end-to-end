@@ -1,4 +1,4 @@
-# Sinergia de Dados: Excel para Power BI através do Ciclo ETL e SQL
+# Criando Soluções para o Power BI Report Server
 
 Esta documentação tem como objetivo explicar a arquitetura e as etapas do projeto **"Sinergia de Dados: Excel para Power BI através do Ciclo ETL e SQL"**. O projeto visa oferecer soluções em Business Intelligence para melhorar processos de gerenciamento de recursos humanos e análise de dados, com foco em transformar planilhas do Excel em um ambiente de Power BI integrado.
 
@@ -103,7 +103,7 @@ Essa documentação apresentou de forma clara as etapas e componentes do projeto
 
 
 ---
-# Data Synergy: Excel to Power BI through ETL Cycle and SQL
+# Building Solutions for Power BI Report Server
 
 This documentation aims to explain the architecture and steps of the project **"Data Synergy: Excel to Power BI through ETL Cycle and SQL"**. The project aims to provide Business Intelligence solutions to improve human resources management processes and data analysis, with a focus on transforming Excel spreadsheets into an integrated Power BI environment.
 
