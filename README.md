@@ -11,7 +11,7 @@ O projeto nasceu da necessidade de uma empresa de médio porte em otimizar seus 
 ### Desafios e Soluções
 
 - Qual o problema?
-    - Utilização de planilhas de Excel para consulta e análise de dados - a ideia é trazer uma solução de análise de dados com zero custo.
+    - Utilização de planilhas de Excel para consulta e análise de dados, budget baixo para criação de um ambiente de análise integrado.
 - Seu trabalho para resolver?
     - Identifiquei as fontes de dados, a partir das fontes iniciei a criação do banco de dados. Após finalizar o banco comecei a gerar os relatórios paginados e dashboards. Também foi realizado a configuração do Report Server.
 - Qual foi o resultado?
@@ -118,9 +118,17 @@ This documentation aims to explain the architecture and steps of the project **"
 
 ## Initial Contact
 
-### Scenario and Challenges
+### Scenario 
 
 The project emerged from the need of a medium-sized company to optimize their human resources management processes and data analysis. The company was using Excel spreadsheets for these tasks, which led to difficulties in data integrity and efficient collaboration.
+
+### Challenges and Solutions
+- What was the problem?
+    - Use of Excel spreadsheets for data querying and analysis - the idea is to provide a zero-cost data analysis solution.
+- What was your work to solve it?
+    - I identified data sources and initiated the database creation process. After completing the database, I started generating paginated reports and dashboards. Additionally, I configured the Report Server.
+- What was the result?
+'- A fully integrated and cost-free analytical environment.
 
 ### Tools
 
