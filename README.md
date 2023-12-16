@@ -8,6 +8,15 @@ Esta documentação tem como objetivo explicar a arquitetura e as etapas do proj
 
 O projeto nasceu da necessidade de uma empresa de médio porte em otimizar seus processos de gerenciamento de recursos humanos e análise de dados. A empresa utilizava planilhas do Excel para essas tarefas, o que gerava dificuldades na integridade dos dados e colaboração eficiente.
 
+### Desafios e Soluções
+
+- Qual o problema?
+    - Utilização de planilhas de Excel para consulta e análise de dados - a ideia é trazer uma solução de análise de dados com zero custo.
+- Seu trabalho para resolver?
+    - Identifiquei as fontes de dados, a partir das fontes iniciei a criação do banco de dados. Após finalizar o banco comecei a gerar os relatórios paginados e dashboards. Também foi realizado a configuração do Report Server.
+- Qual foi o resultado?
+    - Um ambiente análitico totalmente integrado e com zero custo.
+
 ### Ferramentas
 
 As ferramentas utilizadas no projeto são:
