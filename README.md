@@ -1,6 +1,6 @@
-# Criando Soluções para o Power BI Report Server
+# Criando Soluções para o Power BI Report Server - Zero Custo
 
-Esta documentação tem como objetivo explicar a arquitetura e as etapas do projeto **"Sinergia de Dados: Excel para Power BI através do Ciclo ETL e SQL"**. O projeto visa oferecer soluções em Business Intelligence para melhorar processos de gerenciamento de recursos humanos e análise de dados, com foco em transformar planilhas do Excel em um ambiente de Power BI integrado.
+Esta documentação tem como objetivo explicar a arquitetura e as etapas do projeto **"Criando Soluções para o Power BI Report Server - Zero Custo"**. O projeto visa oferecer soluções em Business Intelligence para melhorar processos de gerenciamento de recursos humanos e análise de dados, com foco em transformar planilhas do Excel em um ambiente de Power BI integrado.
 
 ## Primeiro Contato
 
@@ -103,9 +103,9 @@ Essa documentação apresentou de forma clara as etapas e componentes do projeto
 
 
 ---
-# Building Solutions for Power BI Report Server
+# Building Solutions for Power BI Report Server - Zero Cost
 
-This documentation aims to explain the architecture and steps of the project **"Data Synergy: Excel to Power BI through ETL Cycle and SQL"**. The project aims to provide Business Intelligence solutions to improve human resources management processes and data analysis, with a focus on transforming Excel spreadsheets into an integrated Power BI environment.
+This documentation aims to explain the architecture and steps of the project **"Building Solutions for Power BI Report Server - Zero Cost"**. The project aims to provide Business Intelligence solutions to improve human resources management processes and data analysis, with a focus on transforming Excel spreadsheets into an integrated Power BI environment.
 
 ## Initial Contact
 
