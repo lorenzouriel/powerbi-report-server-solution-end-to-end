@@ -4,7 +4,7 @@ Esta documentação tem como objetivo explicar a arquitetura e as etapas do proj
 
 ## Primeiro Contato
 
-### Cenário e Desafios
+### Cenário
 
 O projeto nasceu da necessidade de uma empresa de médio porte em otimizar seus processos de gerenciamento de recursos humanos e análise de dados. A empresa utilizava planilhas do Excel para essas tarefas, o que gerava dificuldades na integridade dos dados e colaboração eficiente.
 
