@@ -6,7 +6,7 @@ Esta documentação tem como objetivo explicar a arquitetura e as etapas do proj
 
 ### Cenário
 
-O projeto nasceu da necessidade de uma empresa de médio porte em otimizar seus processos de gerenciamento de recursos humanos e análise de dados. A empresa utilizava planilhas do Excel para essas tarefas, o que gerava dificuldades na integridade dos dados e colaboração eficiente.
+O projeto nasceu da necessidade de uma empresa de médio porte em otimizar seus processos de gerenciamento de recursos humanos e análise de dados. A empresa utilizava planilhas do Excel para essas tarefas, o que gerava dificuldades na integridade dos dados - o foco também é mostrar que é possível ter um ambiente de análise de dados integrado e com zero custo.
 
 ### Desafios e Soluções
 
@@ -120,7 +120,7 @@ This documentation aims to explain the architecture and steps of the project **"
 
 ### Scenario 
 
-The project emerged from the need of a medium-sized company to optimize their human resources management processes and data analysis. The company was using Excel spreadsheets for these tasks, which led to difficulties in data integrity and efficient collaboration.
+The project was born from the need of a medium-sized company to optimize its human resources management and data analysis processes. The company used Excel spreadsheets for these tasks, which created difficulties in data integrity - the focus is also to show that it is possible to have an integrated data analysis environment at zero cost.
 
 ### Challenges and Solutions
 - What was the problem?
