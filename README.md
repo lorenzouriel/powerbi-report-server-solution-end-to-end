@@ -13,7 +13,7 @@ O projeto nasceu da necessidade de uma empresa de médio porte em otimizar seus 
 - Qual o problema?
     - Utilização de planilhas de Excel para consulta e análise de dados, budget baixo para criação de um ambiente de análise integrado.
 - Seu trabalho para resolver?
-    - Identifiquei as fontes de dados, a partir das fontes iniciei a criação do banco de dados. Após finalizar o banco comecei a gerar os relatórios paginados e dashboards. Também foi realizado a configuração do Report Server.
+    - Identifiquei as fontes de dados, a partir das fontes iniciei a criação do banco de dados. Após finalizar o banco comecei a gerar os relatórios paginados e dashboards. Também foi realizado a configuração do Report Server para o ambiente da empresa.
 - Qual foi o resultado?
     - Um ambiente análitico totalmente integrado e com zero custo.
 
@@ -124,9 +124,9 @@ The project emerged from the need of a medium-sized company to optimize their hu
 
 ### Challenges and Solutions
 - What was the problem?
-    - Use of Excel spreadsheets for data querying and analysis - the idea is to provide a zero-cost data analysis solution.
+    - Use of Excel spreadsheets for data consultation and analysis, low budget to create an integrated analysis environment.
 - What was your work to solve it?
-    - I identified data sources and initiated the database creation process. After completing the database, I started generating paginated reports and dashboards. Additionally, I configured the Report Server.
+    - I identified data sources and initiated the database creation process. After completing the database, I started generating paginated reports and dashboards. Additionally, I configured the Report Server for the company environment.
 - What was the result?
 '- A fully integrated and cost-free analytical environment.
 
